@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>file</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header_name">WALLET</h1>
+        </header>
+        <div class="main">
+            <div class="main_column main_result"> 
+                <div class="diagram-block">
+                    <h2 class="diagram-title">Диаграмма расходов</h2>
+                    <div class="canvas">
+                        <div class="canvas">
+                            <svg class="chart" width="300" height="300" viewBox="0 0 50 50">
+                                <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                                <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                                <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                                <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="legend">
+                    <ul class="legend_list">
+                        <li class="legend_item" data-category="product">
+                            <span class="legend_category">Продукты</span> 
+                            <span class="legend_price" data-price="product">0</span>
+                        </li>
+                        <li class="legend_item" data-category="fastfood"> 
+                            <span class="legend_category">ФастФуд</span>
+                            <span class="legend_price">0</span>
+                        </li>
+                        <li class="legend_item" data-category="sport"> 
+                            <span class="legend category">Спорт</span>
+                            <span class="legend_price">0</span>
+                        </li>
+                        <li class="legend_item" data-category="drinks"> 
+                            <span class="legend_category">Напитки</span>
+                            <span class="legend_price">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_column purcashes">
+                <table class="purcashes_table">
+                    <thead class="purcashes_header">
+                        <tr class="purcashes_row">
+                            <td class="purcashes_td">Наименование</td>
+                            <td class="purcashe_td">Категория</td>
+                            <td class="purcashes_td">Цена</td>
+                            <td class="purcashes_td"></td>
+                        </tr>
+                    </thead>
+                    <tbody class="purcashes_list" id="tbody">
+                        <!-- <tr class="purcashes_item purcashes_rox" data-category="product">
+                            <td class="purcashes_td">Вода</td>
+                            <td class="purcashes_td">Напитки</td>
+                            <td class="purcashes_td">1200</td>
+                            <td class="purcashes_td"><i class="purcashes__item-del fa-solid fa-xmark"></i></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="main column editor">
+                <form class="editor_form" name="form">
+                    <div class="editor_form-row">
+                        <p class="editor_form-input-name">Товар:</p> 
+                        <input type="text" class="editorform-input"name="name" placeholder="Наименование">
+                    </div>
+                    <div class="editor form-row">
+                        <p class=" editor form-input-name">Цена:</p>
+                        <input type="text" class="editorform-input" name="price" placeholder="0">
+                        <div class="editor_form-row">
+                            <p class="editorform-input-name">Категория:</p>
+                            <select name="select-category" id="selectCategory" class="editor_form-input">
+                                <option value="poduct">Продукты</option>
+                                <option value="fastFood">ФастФуд</option>
+                                <option value="sport">Спорт</option>
+                                <option value="drinks">Напитки</option>
+                            </select>
+                        </div>
+                        <div class="editor form-row">
+                            <button class="btn" name="addBtn">Добавить</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</body>
+
+</html>
